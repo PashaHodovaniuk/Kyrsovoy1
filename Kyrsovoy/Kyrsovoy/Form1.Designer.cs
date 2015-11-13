@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -40,28 +41,48 @@
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.metodToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.encryptionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.metod1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.metod2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.metod3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.decryptionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.metod1ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.metod2ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.metod3ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.startToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.clearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.generateAKeyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.metod1E = new System.Windows.Forms.ToolStripMenuItem();
+            this.metod2E = new System.Windows.Forms.ToolStripMenuItem();
+            this.metod3E = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip3 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.metod1D = new System.Windows.Forms.ToolStripMenuItem();
+            this.metod2D = new System.Windows.Forms.ToolStripMenuItem();
+            this.metod3D = new System.Windows.Forms.ToolStripMenuItem();
+            this.MetodStatus = new System.Windows.Forms.ToolStripStatusLabel();
+            this.contextMenuStrip4 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.encryption = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
+            this.contextMenuStrip2.SuspendLayout();
+            this.contextMenuStrip3.SuspendLayout();
+            this.contextMenuStrip4.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
-            this.metodToolStripMenuItem});
+            this.metodToolStripMenuItem,
+            this.startToolStripMenuItem});
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
             // 
@@ -126,56 +147,20 @@
             // 
             // encryptionToolStripMenuItem
             // 
-            this.encryptionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.metod1ToolStripMenuItem,
-            this.metod2ToolStripMenuItem,
-            this.metod3ToolStripMenuItem});
             this.encryptionToolStripMenuItem.Name = "encryptionToolStripMenuItem";
             resources.ApplyResources(this.encryptionToolStripMenuItem, "encryptionToolStripMenuItem");
-            // 
-            // metod1ToolStripMenuItem
-            // 
-            this.metod1ToolStripMenuItem.Name = "metod1ToolStripMenuItem";
-            resources.ApplyResources(this.metod1ToolStripMenuItem, "metod1ToolStripMenuItem");
-            // 
-            // metod2ToolStripMenuItem
-            // 
-            this.metod2ToolStripMenuItem.Name = "metod2ToolStripMenuItem";
-            resources.ApplyResources(this.metod2ToolStripMenuItem, "metod2ToolStripMenuItem");
-            // 
-            // metod3ToolStripMenuItem
-            // 
-            this.metod3ToolStripMenuItem.Name = "metod3ToolStripMenuItem";
-            resources.ApplyResources(this.metod3ToolStripMenuItem, "metod3ToolStripMenuItem");
+            this.encryptionToolStripMenuItem.Click += new System.EventHandler(this.encryptionToolStripMenuItem_Click);
             // 
             // decryptionToolStripMenuItem
             // 
-            this.decryptionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.metod1ToolStripMenuItem1,
-            this.metod2ToolStripMenuItem1,
-            this.metod3ToolStripMenuItem1});
             this.decryptionToolStripMenuItem.Name = "decryptionToolStripMenuItem";
             resources.ApplyResources(this.decryptionToolStripMenuItem, "decryptionToolStripMenuItem");
-            // 
-            // metod1ToolStripMenuItem1
-            // 
-            this.metod1ToolStripMenuItem1.Name = "metod1ToolStripMenuItem1";
-            resources.ApplyResources(this.metod1ToolStripMenuItem1, "metod1ToolStripMenuItem1");
-            // 
-            // metod2ToolStripMenuItem1
-            // 
-            this.metod2ToolStripMenuItem1.Name = "metod2ToolStripMenuItem1";
-            resources.ApplyResources(this.metod2ToolStripMenuItem1, "metod2ToolStripMenuItem1");
-            // 
-            // metod3ToolStripMenuItem1
-            // 
-            this.metod3ToolStripMenuItem1.Name = "metod3ToolStripMenuItem1";
-            resources.ApplyResources(this.metod3ToolStripMenuItem1, "metod3ToolStripMenuItem1");
+            this.decryptionToolStripMenuItem.Click += new System.EventHandler(this.decryptionToolStripMenuItem_Click);
             // 
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripProgressBar1});
+            this.MetodStatus});
             resources.ApplyResources(this.statusStrip1, "statusStrip1");
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
@@ -193,10 +178,156 @@
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 
+            // textBox1
+            // 
+            resources.ApplyResources(this.textBox1, "textBox1");
+            this.textBox1.Name = "textBox1";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Cursor = System.Windows.Forms.Cursors.Arrow;
+            resources.ApplyResources(this.textBox2, "textBox2");
+            this.textBox2.Name = "textBox2";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.ContextMenuStrip = this.contextMenuStrip1;
+            this.label2.Name = "label2";
+            // 
+            // textBox3
+            // 
+            resources.ApplyResources(this.textBox3, "textBox3");
+            this.textBox3.Name = "textBox3";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.ContextMenuStrip = this.contextMenuStrip4;
+            this.label3.Name = "label3";
+            // 
+            // startToolStripMenuItem
+            // 
+            this.startToolStripMenuItem.Name = "startToolStripMenuItem";
+            resources.ApplyResources(this.startToolStripMenuItem, "startToolStripMenuItem");
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.generateAKeyToolStripMenuItem,
+            this.clearToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
+            // 
+            // clearToolStripMenuItem
+            // 
+            this.clearToolStripMenuItem.Name = "clearToolStripMenuItem";
+            resources.ApplyResources(this.clearToolStripMenuItem, "clearToolStripMenuItem");
+            this.clearToolStripMenuItem.Click += new System.EventHandler(this.clearToolStripMenuItem_Click);
+            // 
+            // generateAKeyToolStripMenuItem
+            // 
+            this.generateAKeyToolStripMenuItem.Name = "generateAKeyToolStripMenuItem";
+            resources.ApplyResources(this.generateAKeyToolStripMenuItem, "generateAKeyToolStripMenuItem");
+            this.generateAKeyToolStripMenuItem.Click += new System.EventHandler(this.generateAKeyToolStripMenuItem_Click);
+            // 
+            // contextMenuStrip2
+            // 
+            this.contextMenuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.metod1E,
+            this.metod2E,
+            this.metod3E});
+            this.contextMenuStrip2.Name = "contextMenuStrip2";
+            resources.ApplyResources(this.contextMenuStrip2, "contextMenuStrip2");
+            // 
+            // metod1E
+            // 
+            this.metod1E.CheckOnClick = true;
+            this.metod1E.Name = "metod1E";
+            resources.ApplyResources(this.metod1E, "metod1E");
+            this.metod1E.Click += new System.EventHandler(this.metod1E_Click);
+            // 
+            // metod2E
+            // 
+            this.metod2E.CheckOnClick = true;
+            this.metod2E.Name = "metod2E";
+            resources.ApplyResources(this.metod2E, "metod2E");
+            this.metod2E.Click += new System.EventHandler(this.metod2E_Click);
+            // 
+            // metod3E
+            // 
+            this.metod3E.CheckOnClick = true;
+            this.metod3E.Name = "metod3E";
+            resources.ApplyResources(this.metod3E, "metod3E");
+            this.metod3E.Click += new System.EventHandler(this.metod3E_Click);
+            // 
+            // contextMenuStrip3
+            // 
+            this.contextMenuStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.metod1D,
+            this.metod2D,
+            this.metod3D});
+            this.contextMenuStrip3.Name = "contextMenuStrip3";
+            resources.ApplyResources(this.contextMenuStrip3, "contextMenuStrip3");
+            // 
+            // metod1D
+            // 
+            this.metod1D.CheckOnClick = true;
+            this.metod1D.DoubleClickEnabled = true;
+            this.metod1D.Name = "metod1D";
+            resources.ApplyResources(this.metod1D, "metod1D");
+            this.metod1D.Click += new System.EventHandler(this.metod1D_Click);
+            // 
+            // metod2D
+            // 
+            this.metod2D.CheckOnClick = true;
+            this.metod2D.DoubleClickEnabled = true;
+            this.metod2D.Name = "metod2D";
+            resources.ApplyResources(this.metod2D, "metod2D");
+            this.metod2D.Click += new System.EventHandler(this.metod2D_Click);
+            // 
+            // metod3D
+            // 
+            this.metod3D.CheckOnClick = true;
+            this.metod3D.DoubleClickEnabled = true;
+            this.metod3D.Name = "metod3D";
+            resources.ApplyResources(this.metod3D, "metod3D");
+            this.metod3D.Click += new System.EventHandler(this.metod3D_Click);
+            // 
+            // MetodStatus
+            // 
+            this.MetodStatus.ActiveLinkColor = System.Drawing.Color.Black;
+            this.MetodStatus.Name = "MetodStatus";
+            resources.ApplyResources(this.MetodStatus, "MetodStatus");
+            // 
+            // contextMenuStrip4
+            // 
+            this.contextMenuStrip4.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.encryption});
+            this.contextMenuStrip4.Name = "contextMenuStrip4";
+            resources.ApplyResources(this.contextMenuStrip4, "contextMenuStrip4");
+            // 
+            // encryption
+            // 
+            this.encryption.Name = "encryption";
+            resources.ApplyResources(this.encryption, "encryption");
+            this.encryption.Click += new System.EventHandler(this.encryption_Click);
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
@@ -206,6 +337,10 @@
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
+            this.contextMenuStrip2.ResumeLayout(false);
+            this.contextMenuStrip3.ResumeLayout(false);
+            this.contextMenuStrip4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -220,13 +355,7 @@
         private System.Windows.Forms.ToolStripMenuItem saveKeyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem metodToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem encryptionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem metod1ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem metod2ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem metod3ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem decryptionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem metod1ToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem metod2ToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem metod3ToolStripMenuItem1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem allSaveToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
@@ -236,6 +365,27 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripMenuItem startToolStripMenuItem;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem clearToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem generateAKeyToolStripMenuItem;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
+        private System.Windows.Forms.ToolStripMenuItem metod1E;
+        private System.Windows.Forms.ToolStripMenuItem metod2E;
+        private System.Windows.Forms.ToolStripMenuItem metod3E;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip3;
+        private System.Windows.Forms.ToolStripMenuItem metod1D;
+        private System.Windows.Forms.ToolStripMenuItem metod2D;
+        private System.Windows.Forms.ToolStripMenuItem metod3D;
+        private System.Windows.Forms.ToolStripStatusLabel MetodStatus;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip4;
+        private System.Windows.Forms.ToolStripMenuItem encryption;
 
     }
 }

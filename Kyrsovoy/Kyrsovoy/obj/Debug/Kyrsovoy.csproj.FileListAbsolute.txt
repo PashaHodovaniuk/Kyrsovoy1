@@ -10,3 +10,15 @@ C:\Users\Pasha\OneDrive\Kyrsovoy\Kyrsovoy\Kyrsovoy\obj\Debug\Kyrsovoy.pdb
 C:\Users\Pasha\OneDrive\Kyrsovoy\Kyrsovoy\Kyrsovoy\bin\Debug\en-HK\Kyrsovoy.resources.dll
 C:\Users\Pasha\OneDrive\Kyrsovoy\Kyrsovoy\Kyrsovoy\obj\Debug\Kyrsovoy.Form1.en-HK.resources
 C:\Users\Pasha\OneDrive\Kyrsovoy\Kyrsovoy\Kyrsovoy\obj\Debug\en-HK\Kyrsovoy.resources.dll
+C:\Users\Pasha\Desktop\Kyrsovoy\Kyrsovoy1\Kyrsovoy\Kyrsovoy\bin\Debug\Kyrsovoy.exe.config
+C:\Users\Pasha\Desktop\Kyrsovoy\Kyrsovoy1\Kyrsovoy\Kyrsovoy\obj\Debug\Kyrsovoy.exe
+C:\Users\Pasha\Desktop\Kyrsovoy\Kyrsovoy1\Kyrsovoy\Kyrsovoy\obj\Debug\Kyrsovoy.pdb
+C:\Users\Pasha\Desktop\Kyrsovoy\Kyrsovoy1\Kyrsovoy\Kyrsovoy\bin\Debug\Kyrsovoy.exe
+C:\Users\Pasha\Desktop\Kyrsovoy\Kyrsovoy1\Kyrsovoy\Kyrsovoy\bin\Debug\Kyrsovoy.pdb
+C:\Users\Pasha\Desktop\Kyrsovoy\Kyrsovoy1\Kyrsovoy\Kyrsovoy\bin\Debug\en-HK\Kyrsovoy.resources.dll
+C:\Users\Pasha\Desktop\Kyrsovoy\Kyrsovoy1\Kyrsovoy\Kyrsovoy\obj\Debug\Kyrsovoy.csprojResolveAssemblyReference.cache
+C:\Users\Pasha\Desktop\Kyrsovoy\Kyrsovoy1\Kyrsovoy\Kyrsovoy\obj\Debug\Kyrsovoy.Form1.resources
+C:\Users\Pasha\Desktop\Kyrsovoy\Kyrsovoy1\Kyrsovoy\Kyrsovoy\obj\Debug\Kyrsovoy.Properties.Resources.resources
+C:\Users\Pasha\Desktop\Kyrsovoy\Kyrsovoy1\Kyrsovoy\Kyrsovoy\obj\Debug\Kyrsovoy.Form1.en-HK.resources
+C:\Users\Pasha\Desktop\Kyrsovoy\Kyrsovoy1\Kyrsovoy\Kyrsovoy\obj\Debug\Kyrsovoy.csproj.GenerateResource.Cache
+C:\Users\Pasha\Desktop\Kyrsovoy\Kyrsovoy1\Kyrsovoy\Kyrsovoy\obj\Debug\en-HK\Kyrsovoy.resources.dll

@@ -48,7 +48,7 @@ namespace Kyrsovoy
             }
             for (int i = 0; i < len; i++)
             {
-                textBox2.Text += m[i]+" ";
+                textBox2.Text += m[i]+", ";
             }
         }
 
@@ -136,38 +136,45 @@ namespace Kyrsovoy
             char[] maschartext;
             maschartext = texted.ToCharArray();
             string[] ttext = textBox2.Text.Split(',');
-            long[] maskey = new long[ttext.Length];
-            for (int i = 0; i < ttext.Length; i++)
+            long[] maskey = new long[ttext.Length-1];
+            for (int i = 0; i < ttext.Length-1; i++)
                 maskey[i] = long.Parse(ttext[i]);
             long key;
             long lenkey;
             long[] num = new long[maskey.Length];
             for (int i = 0; i < maschartext.Length; i++)
             {
-                
+
                 for (long k = 0; k < mastext.Length; k++)
                 {
                     if (maschartext[i] == mastext[k])
                     {
                         num[i] = k;
+                        break;
                     }
                 }
-                    key = 0;
-                for (int j = 0; j < maskey.Length; j++)
-                    key = num[j] - maskey[j];
-                if (key < 0)
-                {
-                    lenkey = maxlentext - Math.Abs(key);
-                }
-                else {
-                    lenkey = key;
-                }
-                textBox3.Text += mastext[lenkey]+" ";
             }
+                          
+                    key = 0;
+                    for (int j = 0; j < maskey.Length; j++)
+                    {
+                        key = num[j] - maskey[j];
+                        if (key < 0)
+                        {
+                            lenkey = maxlentext - Math.Abs(key);
+                        }
+                        else
+                        {
+                            lenkey = key;
+                        }
+                        textBox3.Text += mastext[lenkey] + " ";
+                    }
+            
         }
 
         private void encryption_Click(object sender, EventArgs e)
         {
+            textBox3.Clear();
             encrypriontext();
         }
 
